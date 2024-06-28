@@ -1,0 +1,102 @@
+body {
+    background: url('https://i.ibb.co/jhQJtgf/06794263-b0d9-41be-a50d-e611ebe5bae2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+form{
+    padding: 20px 20px 10px 20px;
+}
+
+
+#requestForm, #addPriceBtn, #updateReqBtn{
+    width: 100%;
+    padding: 7px;
+    /* font-size: 15px; */
+}
+
+.cont{
+    display: flex;
+    gap: 1rem;
+    /* border: 1px solid red; */
+}
+
+#left, .right{
+    /* border: 1px solid black; */
+    width: 100%;
+}
+
+.mb-3 input {
+    border-radius: 7px;
+    border: none;
+    padding: 7px;
+}
+
+.header-search:hover{
+    background-color: rgb(16, 16, 116);
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.column {
+    flex: 0 0 48%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.column h2 {
+    text-align: center;
+    color: #333;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.form-group input[type="file"] {
+    padding: 3px;
+}
+.form-group input[type="submit"] {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.form-group input[type="submit"]:hover {
+    background: #0056b3;
+}
+.search-container {
+    margin-bottom: 20px; display: flex; gap: 0.5rem;
+}
+
+.search-container input{ width: 80%; padding: 0.5rem; border-radius: 10px; border: none;}
+
+.search-container input:focus{border: none; outline: none;}
+
+.search-container button{width: 20%; background: #0056b3; color: white; border: none; border-radius: 10px;}
+
+.search-container button:hover{background: skyblue; color: #0056b3;}
+
+form input:focus{border:none; outline:none;}
+
+#updateReqBtn{display: none;}

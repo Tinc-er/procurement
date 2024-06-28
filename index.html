@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Form</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+</head>
+<body>
+
+  <!-- HEADER STARTS HERE -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding-left: 30px; padding-right: 30px;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./images/tinclogo.jpg" alt="" width="80" height="74">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active fw-bolder" aria-current="page" href="#" id="openTicketLink">Open Ticket</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bolder" aria-current="page" href="#" id="updateTicketLink">Update Ticket</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bolder" id="addPriceLink" href="#">Add Price</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" >
+              <button class="btn btn-outline-success" type="submit" id="header-search">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- HEADER ENDS HERE -->
+
+
+
+
+      <!-- HERE COMES THE FORM -->
+
+      <div class="container" id="container-top">
+        <form>
+
+          <!-- SEARCH STARTS HERE -->
+          <!-- <div>
+            <p style="color: red; font-weight: bolder;">Please search with Ticket ID to update ticket</p>
+          </div> -->
+
+          <div class="search-container" style="display: none;" id="search-cont">
+              <input type="text" id="searchTicketID" placeholder="Search by Ticket ID to update/Add Price">
+              <button id="searchBtn">Search</button>
+          </div>
+
+          <!-- SEARCH ENDS HERE -->
+
+          
+
+          <div class="cont">
+          <div id="left">
+
+            <div class="mb-3">
+              <!-- <label for="customerName" class="form-label">Customer Name</label> -->
+              <input type="text" class="form-control shadow" id="cs" aria-describedby="cs" placeholder="Customer Care Name">
+            </div>
+
+<div class="mb-3">
+                  <!-- <label for="customerName" class="form-label">Customer Name</label> -->
+                  <input type="text" class="form-control shadow" id="req" aria-describedby="req" placeholder="Requestee">
+                </div>
+
+
+              <div class="mb-3">
+                  <!-- <label for="customerName" class="form-label">Customer Name</label> -->
+                  <input type="text" class="form-control shadow" id="customerName" aria-describedby="customerName" placeholder="customerName">
+                </div>
+                
+    
+                <div class="mb-3">
+                    <!-- <label for="ticketID" class="form-label">Ticket ID</label> -->
+                    <input type="text" class="form-control shadow" id="ticketID" aria-describedby="ticketID" placeholder="Ticket ID">
+                  </div>
+    
+                  <div class="mb-3">
+                    <!-- <label for="part" class="form-label">part</label> -->
+                    <input type="text" class="form-control shadow" id="part" aria-describedby="part" placeholder="part">
+                  </div>
+    
+                  <div class="mb-3">
+                    <!-- <label for="quantity" class="form-label">Quantity</label> -->
+                    <input type="number" class="form-control shadow" id="quantity" aria-describedby="quantity" min="1" placeholder="Quantity">
+                  </div>
+    
+                  <div class="mb-3">
+                    <!-- <label for="quantity" class="form-label">Quantity</label> -->
+                    <input type="text" class="form-control shadow" id="color" aria-describedby="color" placeholder="Color">
+                  </div>
+    
+                  <div class="mb-3">
+                    <!-- <label for="quantity" class="form-label">Quantity</label> -->
+                    <input type="text" class="form-control shadow" id="model" aria-describedby="model" placeholder="Model">
+                  </div>
+    
+                  <div class="mb-3">
+                    <!-- <label for="quantity" class="form-label">Quantity</label> -->
+                    <input type="text" class="form-control shadow" id="serialNumber" aria-describedby="serialNumber" placeholder="Serial Number">
+                  </div>
+    
+                  <div class="mb-3">
+                    <!-- <label for="quantity" class="form-label">Quantity</label> -->
+                    <input type="text" class="form-control shadow" id="partNumber" aria-describedby="partNumber" placeholder="Part Number">
+                  </div>
+    
+                  <div class="mb-3">
+                    <!-- <label for="quantity" class="form-label">Quantity</label> -->
+                    <input type="file" class="form-control shadow" id="picture" aria-describedby="picture" placeholder="Picture" accept="image/jpg, image/png">
+                  </div>
+    
+                  <div class="mb-3">
+                    <!-- <label for="quantity" class="form-label">Quantity</label> -->
+                    <input type="datetime-local" class="form-control shadow" id="date" aria-describedby="date" placeholder="date">
+                  </div>
+
+
+          </div>
+
+          <div class="right" id="right" style="display: none;">
+              <div class="mb-3">
+                  <!-- <label for="customerName" class="form-label">Customer Name</label> -->
+                  <input type="number" class="form-control shadow" id="price" aria-describedby="price" placeholder="N">
+                </div>
+                
+    
+                <div class="mb-3">
+                    <!-- <label for="ticketID" class="form-label">Ticket ID</label> -->
+                    <input type="text" class="form-control shadow" id="vendor" aria-describedby="vendor" placeholder="Vendor">
+                  </div>
+    
+                  <div class="mb-3">
+                    <!-- <label for="part" class="form-label">part</label> -->
+                    <input type="text" class="form-control shadow" id="country" aria-describedby="country" placeholder="Country">
+                  </div>
+    
+                  <div class="mb-3">
+                    <!-- <label for="quantity" class="form-label">Quantity</label> -->
+                    <input type="number" class="form-control shadow" id="time" aria-describedby="time" placeholder="Time Range">
+                  </div>
+    
+                  <div class="mb-3">
+                    <!-- <label for="quantity" class="form-label">Quantity</label> -->
+                    <input type="text" class="form-control shadow" id="status" aria-describedby="status" placeholder="Status">
+                  </div>
+    
+
+
+          </div>
+      </div>
+
+          
+                     <div class="form-group">
+                        <input type="submit" value="Submit Request" id="disableBtn">
+                        <button type="submit" class="btn btn-danger" id="addPriceBtn" style="display: none;">Add Price Details</button>
+                        <button id="updateReqBtn" class="btn btn-success">Update Request</button>
+                    </div>
+        </form>
+    
+      </div>
+
+
+
+
+
+
+
+    <div class="container" style="display: none;">
+        <div class="row">
+            <div class="column" style="border:none">
+                <h2>Request</h2>
+                <form id="requestForm">
+                
+                    
+
+                 
+                </form>
+            </div>
+           
+        </div>
+    </div>
+    <script src="./scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
